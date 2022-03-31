@@ -1,0 +1,110 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_implementation",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "cloneAddress",
+				"type": "address"
+			}
+		],
+		"name": "CloneNFTCreated",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "allClones",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_tokenName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_tokenSymbol",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_tokenPrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_tokenBaseUri",
+				"type": "string"
+			}
+		],
+		"name": "clone",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "implementation",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_owner",
+				"type": "address"
+			}
+		],
+		"name": "returnClones",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
